@@ -49,7 +49,7 @@ public class Metodos {
         ArrayList<Cliente> dadosClientes = new ArrayList<Cliente>();
         dadosClientes = AcessaBanco.selecionaClientes();
         for(Cliente cliente : dadosClientes){
-            if(cliente.vl_total > 560 && (cliente.id_customer > 1 && cliente.id_customer < 6)){
+            if(cliente.vl_total > 560 && (cliente.id_customer > 1500 && cliente.id_customer < 2700)){
                 media += cliente.vl_total;
                 cont++;
                 clientes += "Cliente: " + cliente.nm_customer + ", Saldo: " + cliente.vl_total + "\n";
